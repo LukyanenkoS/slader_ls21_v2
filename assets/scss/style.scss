@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(https://image.freepik.com/foto-gratis/textura-roja-tela_23-2148134752.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: round;
+    position: relative;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(156, 228, 222);
+}
+
+.carousel {
+    position: relative;
+    border: 4px solid rgb(197, 94, 99);
+}
+
+.slides {
+    height: 500px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 1s;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: #333;
+    color: rgb(255, 255, 255);
+    &.active {
+        opacity: 1;
+        z-index: 2;
+    }
+}
+
+.picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.controls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.control {
+    margin: 5px 20px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    &:hover,
+    &:active,
+    &:focus {
+        outline: none;
+    }
+}
+
+.fas {
+    color: #bd003f;
+}
+
+.indicators {
+    position: absolute;
+    bottom: 60px;
+    z-index: 3;
+    @media (min-width: 992px) {
+        left: 300px;
+    }
+    @media (min-width: 576px) {
+        left: 200px;
+    }
+    @media (min-width: 768px) {
+        left: 290px;
+    }
+}
+
+.indicator {
+    min-height: 20px;
+    min-width: 20px;
+    background-color: rgba($color: #ffffff, $alpha: 0.5);
+    border-radius: 50%;
+    border: 3px solid transparent;
+    margin-right: 7px;
+    margin-left: 7px;
+    &.active {
+        border: 3px solid #bd003f;
+        border-radius: 50%;
+    }
+}
+
+span,
+select {
+    text-transform: none;
+    overflow: visible;
+    display: inline-block;
+}
+
+.active {
+    opacity: 1;
+    z-index: 2;
+}

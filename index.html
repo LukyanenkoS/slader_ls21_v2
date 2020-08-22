@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5b979f3961.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Sliders homework</h1>
+        <div class="carousel" id="carousel">
+            <ul id="slides" class="slides">
+                <li class="slide active"><img class="picture" src="assets/img/Amsterdam.jpg" alt="слайд"> Slide 1</li>
+                <li class="slide"><img class="picture" src="assets/img/barselona.jpg" alt="слайд">Slide 2</li>
+                <li class="slide"><img class="picture" src="assets/img/paris.jpg" alt="слайд"> Slide 3</li>
+                <li class="slide"><img class="picture" src="assets/img/prague.jpg" alt="слайд"> Slide 4</li>
+                <li class="slide"><img class="picture" src="assets/img/roma.jpg" alt="слайд"> Slide 5</li>
+            </ul>
+            <div class="indicators" id="indicators-container">
+                <span class="indicator active" data-slide-to="0"></span>
+                <span class="indicator" data-slide-to="1"></span>
+                <span class="indicator" data-slide-to="2"></span>
+                <span class="indicator" data-slide-to="3"></span>
+                <span class="indicator" data-slide-to="4"></span>
+            </div>
+            <div class="controls" id="controls-container">
+                <span class="control" id="prev"><i class="fas fa-backward fa-2x"></i></span>
+                <span class="control" id="pause"><i class="fas fa-pause fa-2x"></i></span>
+                <span class="control" id="next"><i class="fas fa-forward fa-2x"></i></span>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+
+</html>
